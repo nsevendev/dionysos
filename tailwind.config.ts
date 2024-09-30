@@ -14,27 +14,22 @@ const config: Config = {
         anton: ['Anton', 'sans-serif'], //Titre
       },
       textColor: {
-        text: 'black',
-        title: 'black',
-        navigation: 'black',
+        p: 'black',
+        h1: 'black',
+        nav: 'black',
       },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-        primary: '#FFFFFF', // blanc
-        black: '#000000', //noir
-        purple: '#900C8C', //violet
-        gray: '#757575', //gris
+        primary: '#900C8C', // violet
+        secondary: '#757575', // gris
+        tertiary: '#FFFFFF', //noir
+        quaternary: '#000000', //blanc
       },
       fontSize: {
-        xl: '1.25rem', // 20 px pour le texte qui sera en Work Sans
-        '2xl': '1.5rem', //24 px pour la nav qui sera en Roboto
-        '3xl': '1.875rem', //30 px pour les titres qui seront en Anton
-      },
-      lineHeight: {
-        tight: '1.25',
-        normal: '1.5',
-        relaxed: '1.625', // un peu plus que la valeur par défaut
+        h1: '3rem',
+        p: '1.5rem',
+        nav: '1.8rem',
       },
     },
   },
