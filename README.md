@@ -1,27 +1,25 @@
 # Dionysos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+## Prérequis
 
-## Development server
+-   cloner le projet
+- creer les fichiers `install-deps.sh` dans le dossier `scripts`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Code `install-deps.sh`
 
-## Code scaffolding
+- pour windows copier coller le code dans notepad avant de le copier coller dans le fichier.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+#!/bin/sh
+set -e
 
-## Build
+# Check if node_modules is empty
+if [ -z "$(ls -A 'node_modules' 2>/dev/null)" ]; then
+    echo "node_modules est vide, lancement npm install..."
+    npm ci
+else
+    echo "node_modules est déjà installé..."
+fi
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+exec "$@"
+```
