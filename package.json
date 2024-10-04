@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "start:docker:dev": "ng serve --host 0.0.0.0",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:dionysos": "node dist/dionysos/server/server.mjs"
+    "test": "ng test --no-browsers",
+    "serve:ssr:angular-test": "node dist/angular-test/server/server.mjs"
   },
   "private": true,
   "dependencies": {

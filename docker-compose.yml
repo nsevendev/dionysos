@@ -1,0 +1,14 @@
+services:
+  front:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dionysos-front
+    container_name: dionysos-front
+    ports:
+      - "4200:4200"
+      - "9876:9876"
+    environment:
+      NODE_ENV: development
+    volumes:
+      - .:/app
