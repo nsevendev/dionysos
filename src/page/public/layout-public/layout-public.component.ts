@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '../../../component/footer/footer.component';
+import { ServicesComponent } from '../../../component/services/services.component';
 
 @Component({
   selector: 'app-layout-public',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent],
+  imports: [RouterOutlet, FooterComponent, ServicesComponent],
   templateUrl: './layout-public.component.html',
-  styleUrl: './layout-public.component.css',
 })
 export class LayoutPublicComponent {}
