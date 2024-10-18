@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-service-card1',
@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './service-card1.component.html',
 })
-export class ServiceCard1Component {}
+export class ServiceCard1Component {
+  @Input() titre: string = '';
+  @Input() image: string = '';
+  @Input() text: string = '';
+  @Input() textPosition: 'left' | 'right' = 'left';
+}
