@@ -6,7 +6,7 @@ import { ServicesComponent } from '../../../component/services/services.componen
 @Component({
   selector: 'app-layout-public',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent, ServicesComponent],
+  imports: [RouterOutlet, FooterComponent],
   templateUrl: './layout-public.component.html',
 })
 export class LayoutPublicComponent {}

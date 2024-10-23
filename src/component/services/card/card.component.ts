@@ -1,12 +1,12 @@
 import { Component, Input, input } from '@angular/core';
 
 @Component({
-  selector: 'app-service-card1',
+  selector: 'app-card',
   standalone: true,
   imports: [],
-  templateUrl: './service-card1.component.html',
+  templateUrl: './card.component.html',
 })
-export class ServiceCard1Component {
+export class CardComponent {
   @Input() titre: string = '';
   @Input() image: string = '';
   @Input() text: string = '';
