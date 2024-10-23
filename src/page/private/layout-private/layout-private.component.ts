@@ -6,7 +6,6 @@ import {RouterOutlet} from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './layout-private.component.html',
-  styleUrl: './layout-private.component.css'
 })
 export class LayoutPrivateComponent {
 
